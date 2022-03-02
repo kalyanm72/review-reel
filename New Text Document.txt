@@ -1,0 +1,49 @@
+Focus on learning css and a bit of js (not all)
+
+Try to ise material design, bootstrap
+
+
+add minimal features on the go
+
+Brainstrom list of features to be done
+Brainstrom wireframe and pages
+
+Dark color palette: https://colorhunt.co/palette/dddddd22283130475ef05454
+Light color palette: https://colorhunt.co/palette/e2eff165799b555273e23e57 ||
+		     https://colorhunt.co/palette/faf3f3e1e5eaa7bbc7da7f8f
+
+
+
+
+
+
+Deadlines:
+
+3/2
+
+Mock for desktop first and dark mode (done)
+
+4/2
+
+Mock for All modes
+Collect Data (hardly 1 hr)
+Implement home page
+
+7/2
+Make home page responsive
+Implement User page
+Make user page responsive
+
+8/2
+Implement Movie page
+Make user Moive responsive
+
+9/2
+Backlog | connect to firebase
+refactor after connecting to firebase
+Populate firebase data
+
+10/2
+Touch ups and testings
+
+

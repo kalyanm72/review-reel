@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="icon" href="favicon.jpg" type="images/x-icon">
+    <script src="https://kit.fontawesome.com/42c0bb4347.js" crossorigin="anonymous"></script>
+
+    
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="profile.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400&family=Karla:ital,wght@0,400;0,500;1,400&family=Lato:ital,wght@0,300;0,400;1,100;1,300&family=Merriweather:wght@300;400;700&family=Noto+Sans&family=Oxygen:wght@300;400&family=Quicksand:wght@300;400&family=Raleway:ital,wght@0,300;0,400;0,500;1,300&family=Roboto+Serif:wght@100;400&family=Rubik:wght@300;400;700&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- Self js -->
+    <script type="module">
+      import {ToggleNavbar,Login,Logout} from './index.js';
+
+      import {ToggleTheme} from './theme_toggler.js'
+
+      window._fns = {ToggleTheme,Login,Logout,ToggleTheme};
+
+      // switch theme at last
+    
+      if (localStorage.getItem('site-theme')==1){
+      localStorage.setItem('site-theme',0);
+      ToggleTheme();}
+
+
+    </script>
+    <script src="profile.js" type="text/javascript"></script>
+  </head>
+  <body>
+
+
+    <section id="navbar">
+      
+      <div class="navbar-collapse-wrapper collapse collapse-horizontal" id="navbar-collapse-wrapper" data-toggle="collapse" data-target="#navbar-collapse-wrapper" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">      
+        <div class="navbar-btns-collapse">
+          <ul class="nav nav-pills">
+            <li class="nav-item navbar-btn no-login-btn ">
+              <a class="nav-link " href="#" onclick=window._fns.Login()>Login</a>
+            </li>
+            <li class="nav-item navbar-btn no-login-btn ">
+              <a class="nav-link" href="#">Register</a>
+            </li>
+            <li class="nav-item navbar-btn login-btn no-display">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item navbar-btn login-btn no-display">
+              <a class="nav-link" href="#" onclick=window._fns.Logout()>Logout</a>
+            </li>
+          </ul>
+          
+          <a href="profile.html" class="login-btn no-display navbar-profile-img">
+            <img  src="assets/profile-pic.jpeg" alt="profile pic" >
+          </a>
+        </div>
+      </div>
+
+      <nav class="navbar navbar-dark">
+        <div class="navbar-toggle">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse-wrapper" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+          <div class="site-theme-toggle">
+            <i class="fa-solid fa-moon icon-theme fa-2xl" onclick = window._fns.ToggleTheme()></i>
+          </div>
+          
+          <a href="index.html" class="site-logo-div">
+            <img src="Review Reel-dark.jpg" alt="Review Reel Logo" class="site-logo-img" >
+          </a>
+          
+
+          <!-- <div class="navbar-buttons"> -->
+            <div class="navbar-btns">
+
+              <ul class="nav nav-pills">
+                <li class="nav-item navbar-btn no-login-btn ">
+                  <a class="nav-link " href="#" onclick=window._fns.Login()>Login</a>
+                </li>
+                <li class="nav-item navbar-btn no-login-btn ">
+                  <a class="nav-link" href="#">Register</a>
+                </li>
+                <li class="nav-item navbar-btn login-btn no-display">
+                  <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item navbar-btn login-btn no-display">
+                  <a class="nav-link" href="#" onclick=window._fns.Logout()>Logout</a>
+                </li>
+              </ul>
+              
+              <a href="profile.html" class="login-btn no-display navbar-profile-img">
+                <img  src="assets/profile-pic.jpeg" alt="profile pic" >
+              </a>
+                
+
+            </div>
+          
+            
+          <!-- </div> -->
+          
+            
+        </nav>
+    </section>
+
+    <section id="profile-main">
+      <div class="container-fluid profile-main">
+        <div class="row">
+          <div class="col-md-3 profile">
+            <div class="profile-img">
+              <img src="assets/profile-pic.jpeg" alt="User Display picture">
+            </div>
+
+            <div class="profile-info">
+              
+              <div class="profile-name">
+                <span>Kalyan</span>
+              </div>
+              
+              <div class="profile-desc">
+                <span>
+                  Regular Cinebinger, here to give my 
+                  perpercives
+                </span>
+              </div>
+
+              <div class="profile-interests">
+                <span>
+                  Interests
+                </span>
+                <div class="row">
+                  <div class="col-lg-5 col-md-12 interest-pill">
+                    Sci-Fi
+                  </div>
+                  <div class="col-lg-5 col-md-12 interest-pill">
+                    Action
+                  </div>
+                  <div class="col-lg-5 col-md-12 interest-pill">
+                      Romcom
+                  </div>
+                  <div class="col-lg-5 col-md-12 interest-pill">
+                    Adventure
+                </div>
+                  <div class="col-lg-5 col-md-12 interest-pill">
+                    Suspense
+                </div>
+                  
+                </div>
+              </div>
+
+            </div>
+          </div>
+          
+          <div class=" col-md-1 profile-sep-div">
+            <div class="sep-line-block-top"></div>
+            <div class="sep-line"></div>
+            <div class="sep-line-block-down"></div>
+          </div>
+
+          <div class="col-md-8 user-reviews">
+            <h3>Your Watches</h3>
+            <div class="container-fluid watched-movies">
+              <div class="row">
+                <div class="col-lg-4 col-md-6">
+                  <div class="card">
+                    <img class="card-img-top img-fluid" src="assets/avengers.jfif" alt="avengers">
+                    <div class="card-block">
+                        <h4 class="card-title">Avengers Endgame</h4>
+
+                        <div class="card-stats">
+                          <span class="rating-number">3.5</span>
+                          
+                          <i class="fa-solid fa-xl fa-caret-down rating-decrease-icon no-display" onclick=ChangeRating(event,0)></i>
+                          <i class="fa-solid fa-star ratings-icon"></i>
+                          <i class="fa-solid fa-star ratings-icon"></i>
+                          <i class="fa-solid fa-star ratings-icon"></i>
+                          <i class="fa-solid fa-star-half-stroke ratings-icon"></i>
+                          <i class="fa-regular fa-star ratings-icon"></i>
+
+                          <i class="fa-solid fa-pen-to-square edit-rating-icon" onclick=ChangeRatingDisplay(event,1)></i>
+                          <i class="fa-solid fa-xl fa-caret-up rating-increase-icon no-display" onclick=ChangeRating(event,1)></i>
+                          <i class="fa-solid fa-square-check no-display" onclick=ChangeRatingDisplay(event,0)></i>
+
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class=" col-lg-4 col-md-6">
+                  <div class="card">
+                    <img class="card-img-top img-fluid" src="assets/interstellar.jfif" alt="avengers">
+                    <div class="card-block">
+                        <h4 class="card-title">Interstellar</h4>
+
+                        <div class="card-stats">
+                          <span class="rating-number">2.5</span>
+                          <i class="fa-solid fa-xl fa-caret-down rating-decrease-icon no-display" onclick=ChangeRating(event,0)></i>
+                          <i class="fa-solid fa-star ratings-icon"></i>
+                          <i class="fa-solid fa-star ratings-icon"></i>
+                          <i class="fa-solid fa-star ratings-icon"></i>
+                          <i class="fa-solid fa-star-half-stroke ratings-icon"></i>
+                          <i class="fa-regular fa-star ratings-icon"></i>
+
+                          <i class="fa-solid fa-pen-to-square edit-rating-icon" onclick=ChangeRatingDisplay(event,1)></i>
+                          <i class="fa-solid fa-xl fa-caret-up rating-increase-icon no-display" onclick=ChangeRating(event,1)></i>
+                          <i class="fa-solid fa-square-check no-display" onclick=ChangeRatingDisplay(event,0)></i>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <div class="card">
+                    <img class="card-img-top img-fluid" src="assets/batman.jfif" alt="avengers">
+                    <div class="card-block">
+                        <h4 class="card-title">Batman</h4>
+
+                        <div class="card-stats">
+                          <span class="rating-number">4.5</span>
+                          <i class="fa-solid fa-xl fa-caret-down rating-decrease-icon no-display" onclick=ChangeRating(event,0)></i>
+                          <i class="fa-solid fa-star ratings-icon"></i>
+                          <i class="fa-solid fa-star ratings-icon"></i>
+                          <i class="fa-solid fa-star ratings-icon"></i>
+                          <i class="fa-solid fa-star ratings-icon"></i>
+                          <i class="fa-solid fa-star-half-stroke ratings-icon"></i>
+
+                          <i class="fa-solid fa-pen-to-square edit-rating-icon" onclick=ChangeRatingDisplay(event,1)></i>
+                          <i class="fa-solid fa-xl fa-caret-up rating-increase-icon no-display" onclick=ChangeRating(event,1)></i>
+                          <i class="fa-solid fa-square-check no-display" onclick=ChangeRatingDisplay(event,0)></i>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="footer">
+      
+      <div class="footer footer-dark">
+        <div class="footer-navlinks-div">
+          <ul class="footer-navlinks">
+            <li class="footer-navlink footer-navlink-dark">
+              <a href="#">About Us</a>
+            </li>
+            <li class="footer-navlink footer-navlink-dark">
+              <a href="#">Contact</a>
+            </li>
+            <li class="footer-navlink footer-navlink-dark">
+              <a href="#">API</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-social">
+          <a href="http://www.linkedin.com/reviewreel" class=" social-icon">  
+            <i class="fa-brands fa-xl fa-linkedin linkedin-logo">
+            </i>
+          </a>
+
+          <div class="social-sep-line social-sep-line-dark"></div>
+
+          <a href="http://www.facebook.com/reviewreel" class=" social-icon">
+            <i class="fa-brands fa-xl fa-facebook  facebook-logo"></i>
+          </a>
+
+        
+          <div class="social-sep-line social-sep-line-dark"></div>
+
+          <a href="http://www.instagram.com/reviewreel" class=" social-icon">
+             <i class="fa-brands fa-2x fa-instagram  instagram-logo"></i>
+          </a>
+
+          <div class="social-sep-line social-sep-line-dark"></div>
+
+          <a href="http://www.twitter.com/reviewreel" class=" social-icon">
+            <i class="fa-brands fa-xl fa-twitter twitter-logo"></i>
+          </a>
+          
+        </div>
+
+        <div class="footer-info">
+          <span>&copy; Review Reel Limited</span>
+          <div class="footer-info-sep-line"></div>
+          <span>Desktop Site</span>
+          <span>Mobile Site</span>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

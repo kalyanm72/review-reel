@@ -1,0 +1,58 @@
+[
+    {
+        "title":"Avengers: Endgame",
+        "views":"3456",
+        "ratings":"4.1",
+        "likes":"12345",
+        "poster_src":"assets/avengers.jfif",
+        "genres":["Action","Adventure","Science Fiction"],
+        "year":"2018"
+        
+    },
+    {
+        "title":"Batman",
+        "views":"34562",
+        "ratings":"4.55",
+        "likes":"12345",
+        "poster_src":"assets/batman.jfif",
+        "year":"2011",
+        "genres":["Action","Science Fiction"]
+
+    },
+    {
+        "title":"Interstellar",
+        "views":"3562",
+        "ratings":"4.9",
+        "likes":"12345",
+        "poster_src":"assets/interstellar.jfif",
+        "year":"2011",
+        "genres":["Science Fiction"]
+    },
+    {
+        "title":"Ironman",
+        "views":"2552",
+        "ratings":"4",
+        "likes":"12345",
+        "poster_src":"assets/ironman.jfif",
+        "year":"2008",
+        "genres":["Science Fiction"]
+    },
+    {
+        "title":"Martian",
+        "views":"62",
+        "ratings":"3.7",
+        "likes":"12345",
+        "poster_src":"assets/maritan.jfif",
+        "year":"2017",
+        "genres":["Action","Science Fiction"]
+    },
+    {
+        "title":"Some really large movie title doesnt fit in one line and not even two lines and not three",
+        "views":"5621",
+        "ratings":"2.5",
+        "likes":"12345",
+        "poster_src":"assets/spiderman.jfif",
+        "year":"2017",
+        "genres":["RomCom","Action"]
+    }
+]
