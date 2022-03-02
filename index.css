@@ -151,7 +151,6 @@ font-family: 'Ubuntu', sans-serif; */
 
 .navbar-collapse-wrapper{
     width: 100vh;
-    height: 100vh;
     background-color: rgba(0, 0, 0, 0.438);
     position: fixed;
     z-index: 1;
@@ -164,24 +163,29 @@ font-family: 'Ubuntu', sans-serif; */
 
 .navbar-btns-collapse{
     opacity: 1;
-    height: 100vh;
-    display: inline-block;
     background-color: #5b9780;
     z-index: 10;
-    display: flex;
+    margin: 0;
+    height: 100%;
+    display: inline-flex;
+    float: left;
     flex-direction: column-reverse;
     justify-content: flex-end;
     width: 30%;
+    height: 100vh;
 }
 
-/* .dummy-nav{
-    display: inline-block;
-} */
+.dummy-nav{
+    width: 70%;
+    height: 100vh;
+    z-index: 10;
+    float: right;
+    background-color: rgba(0, 0, 0, 0.13);
+}
 
 .navbar-btns-collapse .nav-pills{
     display: flex;
     flex-direction: column;
-    margin-top: 10%;
     padding: 40% auto;
 }
 
@@ -194,10 +198,18 @@ font-family: 'Ubuntu', sans-serif; */
     align-self: center;
 }
 
+.close{
+    margin-top: 10%;
+}
+
 
 .no-display{
     display: none;
 }
+/* 
+.close{
+
+} */
 
 
 /* content */

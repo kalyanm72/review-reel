@@ -40,32 +40,42 @@
   </head>
   <body>
 
-
-    <section id="navbar">
+    <div class="navbar-collapse-wrapper collapse collapse-horizontal" id="navbar-collapse-wrapper">      
       
-      <div class="navbar-collapse-wrapper collapse collapse-horizontal" id="navbar-collapse-wrapper" data-toggle="collapse" data-target="#navbar-collapse-wrapper" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">      
-        <div class="navbar-btns-collapse">
-          <ul class="nav nav-pills">
-            <li class="nav-item navbar-btn no-login-btn ">
-              <a class="nav-link " href="#" onclick=window._fns.Login()>Login</a>
-            </li>
-            <li class="nav-item navbar-btn no-login-btn ">
-              <a class="nav-link" href="#">Register</a>
-            </li>
-            <li class="nav-item navbar-btn login-btn no-display">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item navbar-btn login-btn no-display">
-              <a class="nav-link" href="#" onclick=window._fns.Logout()>Logout</a>
-            </li>
-          </ul>
-          
-          <a href="profile.html" class="login-btn no-display navbar-profile-img">
-            <img  src="assets/profile-pic.jpeg" alt="profile pic" >
-          </a>
-        </div>
+      <div class="navbar-btns-collapse" >
+        
+        <ul class="nav nav-pills">
+          <li class="nav-item navbar-btn no-login-btn ">
+            <a class="nav-link " href="#" onclick=window._fns.Login()>Login</a>
+          </li>
+          <li class="nav-item navbar-btn no-login-btn ">
+            <a class="nav-link" href="#">Register</a>
+          </li>
+          <li class="nav-item navbar-btn login-btn no-display">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item navbar-btn login-btn no-display">
+            <a class="nav-link" href="#" onclick=window._fns.Logout()>Logout</a>
+          </li>
+        </ul>
+        
+        <a href="profile.html" class="login-btn no-display navbar-profile-img">
+          <img  src="assets/profile-pic.jpeg" alt="profile pic" >
+        </a>
+
+        <button type="button" class="close" data-toggle="collapse" data-target="#navbar-collapse-wrapper" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" >
+          <span aria-hidden="true">&times;</span>
+        </button>
       </div>
 
+      <div class="dummy-nav"  data-toggle="collapse" data-target="#navbar-collapse-wrapper" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        
+      </div>
+      
+    </div>
+
+
+    <section id="navbar">
       <nav class="navbar navbar-dark">
         <div class="navbar-toggle">
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse-wrapper" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -130,7 +140,7 @@
               <div class="profile-desc">
                 <span>
                   Regular Cinebinger, here to give my 
-                  perpercives
+                  perspectives
                 </span>
               </div>
 
