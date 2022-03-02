@@ -1,0 +1,16 @@
+{
+    "name": "Review Reel",
+    "short_name": "Rewview Reel",
+    "start_url": "index.html",
+    "scope": "./",
+    "icons": [
+      {
+        "src": "favicon.jpg",
+        "sizes": "484x352",
+        "type": "image/jpg"
+      }
+    ],
+    "theme_color": "black",
+    "background_color": "#222831",
+    "display": "standalone"
+  }

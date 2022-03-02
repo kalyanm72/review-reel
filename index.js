@@ -1,7 +1,10 @@
 
 import {PopulateCards} from './content_handler.js';
 
-
+if ("serviceWorker" in navigator) {
+    // register service worker
+    navigator.serviceWorker.register("service-worker.js");
+}
 
 export function ToggleNavbar(){
     let login_btns = document.querySelectorAll('.login-btn');
