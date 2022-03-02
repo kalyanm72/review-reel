@@ -165,6 +165,7 @@ font-family: 'Ubuntu', sans-serif; */
 .navbar-btns-collapse{
     opacity: 1;
     height: 100vh;
+    display: inline-block;
     background-color: #5b9780;
     z-index: 10;
     display: flex;
@@ -172,6 +173,10 @@ font-family: 'Ubuntu', sans-serif; */
     justify-content: flex-end;
     width: 30%;
 }
+
+/* .dummy-nav{
+    display: inline-block;
+} */
 
 .navbar-btns-collapse .nav-pills{
     display: flex;
